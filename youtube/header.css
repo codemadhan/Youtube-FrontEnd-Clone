@@ -1,0 +1,249 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(224, 223, 223);
+    
+
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* margin-left: 50px; */
+}
+
+.middle{
+    
+    flex: 1;   
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.hamburger{
+    height: 25px;
+    margin-left: 21px;
+    margin-right: 21px;
+    cursor: pointer;
+}
+
+.hamburger:hover{
+    background-color: rgb(228, 224, 224);
+}
+
+.hamburger:active{
+    opacity: 0.8;
+}
+
+.youtubelogo{
+    height: 20px;
+}
+
+.search{
+    flex: 1;
+    height: 35px;
+    width:0;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: rgb(201, 199, 199);
+    border-style: solid;
+    outline: none;
+    font-size: 17px;
+    padding-left: 15px;
+    color: rgb(27, 24, 24);
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.search:active{
+    border-width: 1px;
+    border-color: rgb(167, 165, 165);
+}
+
+.search::placeholder{
+    font-family:  Roboto Condensed;
+    font-size: 17px;
+    font-weight: lighter;
+    
+}
+
+@media (max-width:769px){
+    .search{
+        display: none;
+    }
+}
+
+.searchbutton{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 39px;
+    width: 64px;
+    border-width: 1px;
+    border-color: rgb(201, 199, 199);
+    border-style: solid;
+    margin-left: -1px;
+    background-color: #f7f7f7;
+    padding: 5px;
+    cursor: pointer;
+    transition: opacity 0.15s, box-shadow 0.15s;
+ }
+
+ .searchbutton:active{
+    opacity: 0.6;
+    
+ }
+
+ .searchbutton:hover{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+ }
+
+.searchimg{
+    height: 22px;
+}
+
+.voicesearch{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    margin-left: 7px;
+    background-color: #f7f7f7;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.voiceimg{
+    padding-top: 6px;
+    height: 22px;
+}
+
+.voicesearch:hover{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.voicesearch:active{
+    opacity: 0.8;
+}
+
+.uploadit{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    width: 36px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-style: none;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.uploadit .desc,
+.notifications .desc,
+.myprofile .desc,
+.searchbutton .desc,
+.voicesearch .desc{
+    position: absolute;
+    bottom: -27px;
+    font-size: 12px;
+    background-color: rgb(121, 119, 119);
+    color: white;
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 4px;
+    opacity: 0;
+    white-space: nowrap;
+    pointer-events: none;     /*for pointer to be hidden */
+    transition : opacity 0.15s;   /*transititon is used here because opacity is for desc not for uploadit*/
+}
+
+.uploadit:hover .desc,
+.notifications:hover .desc,
+.myprofile:hover .desc,
+.searchbutton:hover .desc,
+.voicesearch:hover .desc{
+    opacity: 1;
+}
+
+.uploadit:hover,
+.notifications:hover{
+    background-color: rgb(228, 224, 224);
+}
+
+.uploadit:active,
+.notificaitons:active{
+    opacity: 0.8;
+}
+
+.uploadimg{
+    height: 24px;   
+    margin-top: 2.5px;
+}
+
+.notifications{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 32px;
+    width: 36px;
+    border-radius: 4px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-style: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.notificationsimg{
+    height: 24px;
+}
+
+.myprofile{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    padding: 0px;
+    border-style: none;
+    border-radius: 32px;
+    margin-left: 15px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.myprofile:hover{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.myprofile:active{
+    opacity: 0.8;
+}
+
+.myprofileimg{
+    width: 100%;
+    border-radius: 32px;
+}
+

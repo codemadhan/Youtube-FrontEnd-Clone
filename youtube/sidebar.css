@@ -1,0 +1,170 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    position: fixed;
+    top: 70px;
+    left: 15px;
+    bottom: 55px;
+    justify-content: space-between;
+    background-color: white;
+}
+
+
+.sidebar-buttons{        /* common name for the main button div*/
+    height: 70px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+
+}
+
+.buttonname{             /*common name for the name of the buttons div */
+    height: 15px;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+.homebutton{
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.15s;
+    
+}
+
+.homebutton:hover{
+    background-color: rgb(228, 224, 224);
+}
+
+.homebutton:active{
+    opacity: 0.8;
+}
+
+.home{
+    height: 28px;
+}
+
+.explorebutton{
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.explorebutton:hover{
+    background-color: rgb(228, 224, 224);
+}
+
+.explorebutton:active{
+    opacity: 0.8;
+}
+
+.explore{
+    height: 28px;
+}
+
+.subscriptionsbutton{
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.subscriptionsbutton:hover{
+    background-color: rgb(228, 224, 224);
+}
+
+.subscriptions:active{
+    opacity: 0.8;
+}
+
+.subscriptions{
+    height: 28px;
+}
+
+.originalsbutton{
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.originalsbutton:hover{
+    background-color: rgb(228, 224, 224);
+}
+
+.originalsbutton:active{
+    opacity: 0.8;
+}
+
+.originals{
+    height: 28px;
+}
+
+.youtubemusicbutton{
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.youtubemusicbutton:hover{
+    background-color: rgb(228, 224, 224);
+}
+
+.youtubemusicbutton:active{
+    opacity: 0.8;
+}
+
+.youtubemusic{
+    height: 28px;
+}
+
+.librarybutton{
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.librarybutton:hover{
+    background-color: rgb(228, 224, 224);
+}
+
+.librarybutton:active{
+    opacity: 0.8;
+}
+
+.library{
+    height: 28px;
+}
